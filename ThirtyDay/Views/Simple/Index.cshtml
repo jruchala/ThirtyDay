@@ -2,47 +2,44 @@
 
 @{
     ViewBag.Title = "Index";
+    var likesMusic = Model.LikesMusic ? "active" : null;
+    var notAMusicFan = !Model.LikesMusic ? "active" : null;
 }
 
 <h2>Index</h2>
 
 <div>
-    <h4>Person</h4>
+    <div class="page-header">
+        <h1>Welcome to the Person Page <small>Read all about @Model.FirstName</small></h1>
+    </div>
+
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.FirstName)
-        </dt>
+    <div>
+        <h3>@Model.FirstName @Model.LastName</h3>
+        <p>@Model.FirstName was born on @Model.BirthDate.ToString("D").</p>
+        <p>
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-success btn-sm @likesMusic">
+                    <input type="radio" name="options" id="option1" /> Likes Music
+                </label>
+                <label class="btn btn-success btn-sm @notAMusicFan">
+                    <input type="radio" name="options" id="option2" />  Suffers in a Distorted Reality
+                </label>
+            </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.FirstName)
-        </dd>
+        </p>
+    </div>
+    <div>
+        <p>
+            Skills:
+            @foreach (var skill in Model.Skills)
+            {
+                <span class="label label-primary">@skill</span>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.LastName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.LastName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.BirthDate)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.BirthDate)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.LikesMusic)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.LikesMusic)
-        </dd>
-
-    </dl>
+            }
+        </p>
+    </div>
+   
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
