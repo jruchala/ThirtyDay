@@ -24,5 +24,11 @@ namespace ThirtyDay.Controllers
 
             return View(person);
         }
+
+        public ActionResult Create()
+        {
+            var person = new Person();
+            return View(person);
+        }
     }
 }

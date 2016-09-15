@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
 
 namespace ThirtyDay.Models
 {
@@ -10,6 +12,8 @@ namespace ThirtyDay.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }
+
+        [UIHint("BooleanButtonLabel")]
         public bool LikesMusic { get; set; }
         public ICollection<string> Skills { get; set; }
     }

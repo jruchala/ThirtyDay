@@ -77,6 +77,5 @@ c:\users\rucha\onedrive\documents\visual studio 2015\Projects\ThirtyDay\ThirtyDa
 c:\users\rucha\onedrive\documents\visual studio 2015\Projects\ThirtyDay\ThirtyDay\bin\Microsoft.Owin.Security.Google.xml
 c:\users\rucha\onedrive\documents\visual studio 2015\Projects\ThirtyDay\ThirtyDay\bin\Microsoft.Owin.Security.Twitter.xml
 c:\users\rucha\onedrive\documents\visual studio 2015\Projects\ThirtyDay\ThirtyDay\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-c:\users\rucha\onedrive\documents\visual studio 2015\Projects\ThirtyDay\ThirtyDay\obj\Debug\ThirtyDay.csprojResolveAssemblyReference.cache
 c:\users\rucha\onedrive\documents\visual studio 2015\Projects\ThirtyDay\ThirtyDay\obj\Debug\ThirtyDay.dll
 c:\users\rucha\onedrive\documents\visual studio 2015\Projects\ThirtyDay\ThirtyDay\obj\Debug\ThirtyDay.pdb
