@@ -28,5 +28,16 @@ namespace ThirtyDay.Controllers
         {
             return View(_people);
         }
+
+        public ActionResult SearchPeople(string searchText)
+        {
+            var term = searchText.ToLower();
+            var result = _people
+                .Where(p =>
+                p.FirstName.ToLower().Contains(term) ||
+                p.LastName.ToLower().Contains(term)
+                );
+            return PartialView("_SearchPeople", result);
+        }
     }
 }
