@@ -18,6 +18,7 @@ namespace ThirtyDay.Controllers
                 LastName = "McGuffery",
                 BirthDate = new DateTime(1990, 6, 1),
                 LikesMusic = true,
+                EmailAddress = "Billy@jo.com",
                 Skills = new List<string>() { "Math", "Science", "History" }
 
             };

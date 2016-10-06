@@ -12,6 +12,7 @@ namespace ThirtyDay.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }
+        public string EmailAddress { get; set; }
 
         [UIHint("BooleanButtonLabel")]
         public bool LikesMusic { get; set; }
