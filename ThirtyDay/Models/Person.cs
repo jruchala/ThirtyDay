@@ -9,13 +9,30 @@ namespace ThirtyDay.Models
 {
     public class Person
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public DateTime BirthDate { get; set; }
-        public string EmailAddress { get; set; }
+        public Person()
+        {
+            Skills = new HashSet<string>();
+            BirthDate = DateTime.Now.AddYears(-20);
+        }
+        public int PersonId { get; set; }
 
+
+        [Required]
+        public string FirstName { get; set; }
+
+        [Required]
+        public string LastName { get; set; }
+
+        [Required]
+        public DateTime BirthDate { get; set; }
+
+        [Required]
         [UIHint("BooleanButtonLabel")]
         public bool LikesMusic { get; set; }
+
+        [Required]
+        [EmailAddress]
+        public string EmailAddress { get; set; }
         public ICollection<string> Skills { get; set; }
     }
 }
