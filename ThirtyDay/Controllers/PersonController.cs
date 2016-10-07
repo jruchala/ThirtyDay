@@ -9,7 +9,7 @@ using ThirtyDay.Models;
 namespace ThirtyDay.Controllers
 {
 
-    public class PersonController : Controller
+    public class PersonController : BaseController
     {
         private static ICollection<Person> _people;
         
@@ -52,8 +52,11 @@ namespace ThirtyDay.Controllers
             if (ModelState.IsValid)
             {
                 _people.Add(person);
+                Success(string.Format("<b>{0}</> was successfully added to the database.", person.FirstName), true);
                 return RedirectToAction("Index");
             }
+
+            Danger("Looks like something went wrong. Please check your form.");
 
             return View(person);
         }
