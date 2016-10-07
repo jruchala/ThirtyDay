@@ -1,0 +1,15 @@
+﻿.badge-danger {
+    background-color: #d43f3a;
+}
+
+.badge-warning {
+    background-color: #398439;
+}
+
+.badge-info {
+    background-color: #269ABC;
+}
+
+.badge-inverse {
+    background-color: #333333;
+}

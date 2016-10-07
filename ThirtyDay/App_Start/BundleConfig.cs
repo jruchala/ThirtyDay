@@ -25,6 +25,7 @@ namespace ThirtyDay
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/content/bootstrap.custom.css",
                       "~/Content/site.css"));
         }
     }
