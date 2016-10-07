@@ -81,3 +81,5 @@ c:\users\rucha\onedrive\documents\visual studio 2015\Projects\ThirtyDay\ThirtyDa
 c:\users\rucha\onedrive\documents\visual studio 2015\Projects\ThirtyDay\ThirtyDay\obj\Debug\ThirtyDay.pdb
 C:\Users\rucha\OneDrive\Documents\Visual Studio 2015\Projects\ThirtyDay\ThirtyDay\obj\Debug\ThirtyDay.csprojResolveAssemblyReference.cache
 C:\Users\rucha\OneDrive\Documents\Visual Studio 2015\Projects\ThirtyDay\ThirtyDay\bin\Angela.Core.dll
+C:\Users\rucha\OneDrive\Documents\Visual Studio 2015\Projects\ThirtyDay\ThirtyDay\obj\Debug\ThirtyDay.Migrations.dbcreate.resources
+C:\Users\rucha\OneDrive\Documents\Visual Studio 2015\Projects\ThirtyDay\ThirtyDay\obj\Debug\ThirtyDay.csproj.GenerateResource.Cache
