@@ -220,6 +220,15 @@
       <DependentUpon>201610071807276_db-create.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\Identity\201609131339419_InitialCreate.cs" />
+    <Compile Include="Migrations\Identity\201609131339419_InitialCreate.Designer.cs">
+      <DependentUpon>201609131339419_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Identity\201610101941492_CssTheme.cs" />
+    <Compile Include="Migrations\Identity\201610101941492_CssTheme.Designer.cs">
+      <DependentUpon>201610101941492_CssTheme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Identity\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -327,6 +336,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201610071807276_db-create.resx">
       <DependentUpon>201610071807276_db-create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\Identity\201609131339419_InitialCreate.resx">
+      <DependentUpon>201609131339419_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\Identity\201610101941492_CssTheme.resx">
+      <DependentUpon>201610101941492_CssTheme.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

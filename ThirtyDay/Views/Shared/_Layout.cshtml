@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @{
-        var theme = Session["CssTheme"] as string ?? Bootstrap.Theme.Stock;
+        var theme = Bootstrap.Theme.Stock;
+        if (User.Identity.IsAuthenticated)
+        {
+            var userStore = new UserStore<ApplicationUser>(new ApplicationDbContext());
+            var manager = new ApplicationUserManager<ApplicationUser>(userStore);
+            var user = manager.FindByIdAsync(User.Identity.GetUserId());
+            theme = user.CssTheme ?? theme;
+        }
     }
     @Styles.Render(Bootstrap.Bundle(theme))
     @Scripts.Render("~/bundles/modernizr")

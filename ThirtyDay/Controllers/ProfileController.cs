@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ThirtyDay.Models;
 
 namespace ThirtyDay.Controllers
 {
@@ -11,7 +14,11 @@ namespace ThirtyDay.Controllers
         // GET: Profile
         public ActionResult ChangeTheme(string themename)
         {
-            Session["CssTheme"] = themename;
+            var userStore = new UserStore<ApplicationUser>(new ApplicationDbContext());
+            var manager = new UserManager<ApplicationUser>(userStore);
+            var user = manager.FindById(User.Identity.GetUserId());
+            user.CssTheme = themename;
+            manager.Update(user);.
             if (Request.UrlReferrer != null)
             {
                 var returnUrl = Request.UrlReferrer.ToString();

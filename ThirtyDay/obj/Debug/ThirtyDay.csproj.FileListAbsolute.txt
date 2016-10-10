@@ -83,3 +83,5 @@ C:\Users\rucha\OneDrive\Documents\Visual Studio 2015\Projects\ThirtyDay\ThirtyDa
 C:\Users\rucha\OneDrive\Documents\Visual Studio 2015\Projects\ThirtyDay\ThirtyDay\bin\Angela.Core.dll
 C:\Users\rucha\OneDrive\Documents\Visual Studio 2015\Projects\ThirtyDay\ThirtyDay\obj\Debug\ThirtyDay.Migrations.dbcreate.resources
 C:\Users\rucha\OneDrive\Documents\Visual Studio 2015\Projects\ThirtyDay\ThirtyDay\obj\Debug\ThirtyDay.csproj.GenerateResource.Cache
+C:\Users\rucha\OneDrive\Documents\Visual Studio 2015\Projects\ThirtyDay\ThirtyDay\obj\Debug\ThirtyDay.Migrations.Identity.InitialCreate.resources
+C:\Users\rucha\OneDrive\Documents\Visual Studio 2015\Projects\ThirtyDay\ThirtyDay\obj\Debug\ThirtyDay.Migrations.Identity.CssTheme.resources
