@@ -11,6 +11,7 @@ namespace ThirtyDay.Helpers
         public string RatingLevel { get; set; }
         public int Size { get; set; }
 
+        public string CssClass { get; set; }
         public class DefaultImage
         {
             public const string Default = "";
