@@ -204,6 +204,7 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NotificationsController.cs" />
     <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Controllers\SimpleController.cs" />
@@ -218,6 +219,10 @@
     <Compile Include="Migrations\201610071807276_db-create.cs" />
     <Compile Include="Migrations\201610071807276_db-create.Designer.cs">
       <DependentUpon>201610071807276_db-create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610141914174_personalnotifications.cs" />
+    <Compile Include="Migrations\201610141914174_personalnotifications.Designer.cs">
+      <DependentUpon>201610141914174_personalnotifications.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\Identity\201609131339419_InitialCreate.cs" />
@@ -316,6 +321,11 @@
     <Content Include="Views\Person\Create.cshtml" />
     <Content Include="Views\Shared\_Alerts.cshtml" />
     <Content Include="Views\Shared\_MenuPartial.cshtml" />
+    <Content Include="Views\Notifications\Create.cshtml" />
+    <Content Include="Views\Notifications\Delete.cshtml" />
+    <Content Include="Views\Notifications\Details.cshtml" />
+    <Content Include="Views\Notifications\Edit.cshtml" />
+    <Content Include="Views\Notifications\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -336,6 +346,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201610071807276_db-create.resx">
       <DependentUpon>201610071807276_db-create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610141914174_personalnotifications.resx">
+      <DependentUpon>201610141914174_personalnotifications.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\Identity\201609131339419_InitialCreate.resx">
       <DependentUpon>201609131339419_InitialCreate.cs</DependentUpon>

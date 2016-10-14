@@ -12,8 +12,14 @@ namespace ThirtyDay.Filters
     {
         public override void OnActionExecuted(ActionExecutedContext filterContext)
         {
+            if (!filterContext.HttpContext.User.Identity.IsAuthenticated) return;
+
+            var userId = filterContext.HttpContext.User.Identity.GetUserId();
+
             var context = new SiteDataContext();
             var notifications = context.Notifications
+                .Where(n => n.UserId == userId)
+                .Where(n => !n.IsDismissed)
                 .GroupBy(n => n.NotificationType)
                 .Select(g => new NotificationViewModel
                 {

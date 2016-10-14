@@ -84,3 +84,5 @@ C:\Users\rucha\OneDrive\Documents\Visual Studio 2015\Projects\ThirtyDay\ThirtyDa
 C:\Users\rucha\OneDrive\Documents\Visual Studio 2015\Projects\ThirtyDay\ThirtyDay\obj\Debug\ThirtyDay.csproj.GenerateResource.Cache
 C:\Users\rucha\OneDrive\Documents\Visual Studio 2015\Projects\ThirtyDay\ThirtyDay\obj\Debug\ThirtyDay.Migrations.Identity.InitialCreate.resources
 C:\Users\rucha\OneDrive\Documents\Visual Studio 2015\Projects\ThirtyDay\ThirtyDay\obj\Debug\ThirtyDay.Migrations.Identity.CssTheme.resources
+C:\Users\rucha\onedrive\documents\visual studio 2015\Projects\ThirtyDay\ThirtyDay\obj\Debug\ThirtyDay.csprojResolveAssemblyReference.cache
+C:\Users\rucha\onedrive\documents\visual studio 2015\Projects\ThirtyDay\ThirtyDay\obj\Debug\ThirtyDay.Migrations.personalnotifications.resources

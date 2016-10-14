@@ -15,22 +15,22 @@ namespace ThirtyDay.Migrations
 
         protected override void Seed(ThirtyDay.Models.SiteDataContext context)
         {
-            context.Notifications.AddOrUpdate(notification => notification.Title,
-                new Notification
-                {
-                    Title = "John Smith was added to the system.",
-                    NotificationType = NotificationType.Registration
-                },
-                new Notification
-                {
-                    Title = "Susan Peters was added to the system.",
-                    NotificationType = NotificationType.Registration
-                },
-                new Notification
-                {
-                    Title = "Just an FYI on Thursday’s meeting",
-                    NotificationType = NotificationType.Email
-                });
+            //context.Notifications.AddOrUpdate(notification => notification.Title,
+            //    new Notification
+            //    {
+            //        Title = "John Smith was added to the system.",
+            //        NotificationType = NotificationType.Registration
+            //    },
+            //    new Notification
+            //    {
+            //        Title = "Susan Peters was added to the system.",
+            //        NotificationType = NotificationType.Registration
+            //    },
+            //    new Notification
+            //    {
+            //        Title = "Just an FYI on Thursday’s meeting",
+            //        NotificationType = NotificationType.Email
+            //    });
         }
     }
 }

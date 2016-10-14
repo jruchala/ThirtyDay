@@ -5,8 +5,8 @@ using System.Web;
 
 namespace ThirtyDay.Models
 {
-  
-        public enum NotificationType
+    
+    public enum NotificationType
         {
             Registration,
             Email
@@ -14,6 +14,9 @@ namespace ThirtyDay.Models
 
         public class Notification
         {
+
+            public string UserId { get; set; }
+            public bool IsDismissed { get; set; }
             public int NotificationId { get; set; }
             public string Title { get; set; }
             public NotificationType NotificationType { get; set; }
